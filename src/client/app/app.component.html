@@ -1,0 +1,20 @@
+<div class="nav-bar">
+  <!-- <img class="logo-small" src="../images/logo.png"/>-->
+  <div class="nav-links">
+    <a [routerLinkActive]="['is-active']" [routerLink]="['']" [routerLinkActiveOptions]="{exact:true}">Home</a>
+
+    <a>Gradients</a>
+
+    <div class="accordion-child">
+      <a [routerLinkActive]="['is-active']" [routerLink]="['/gradients/subtle']"
+         [routerLinkActiveOptions]="{exact:true}">Subtle</a>
+      <a [routerLinkActive]="['is-active']" [routerLink]="['/gradients/vibrant']"
+         [routerLinkActiveOptions]="{exact:true}">Vibrant</a>
+    </div>
+
+    <a [routerLinkActive]="['is-active']" [routerLink]="['/preloaders']" [routerLinkActiveOptions]="{exact:true}">Preloaders</a>
+
+  </div>
+</div>
+
+<router-outlet></router-outlet>
