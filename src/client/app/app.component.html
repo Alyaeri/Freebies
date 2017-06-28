@@ -1,19 +1,30 @@
 <div class="nav-bar">
-  <!-- <img class="logo-small" src="../images/logo.png"/>-->
+  <img class="logo-small" src="../images/logo.png"/>
   <div class="nav-links">
-    <a [routerLinkActive]="['is-active']" [routerLink]="['']" [routerLinkActiveOptions]="{exact:true}">Home</a>
+    <div>
+      <a [routerLinkActive]="['is-active']" [routerLink]="['']" [routerLinkActiveOptions]="{exact:true}"
+         class="nav-link">Home</a>
 
-    <a>Gradients</a>
+      <a class="nav-link">Gradients</a>
 
-    <div class="accordion-child">
-      <a [routerLinkActive]="['is-active']" [routerLink]="['/gradients/subtle']"
-         [routerLinkActiveOptions]="{exact:true}">Subtle</a>
-      <a [routerLinkActive]="['is-active']" [routerLink]="['/gradients/vibrant']"
-         [routerLinkActiveOptions]="{exact:true}">Vibrant</a>
+      <div class="accordion-child">
+        <a [routerLinkActive]="['is-active']" [routerLink]="['/gradients/subtle']"
+           [routerLinkActiveOptions]="{exact:true}" class="nav-link">Subtle</a>
+        <a [routerLinkActive]="['is-active']" [routerLink]="['/gradients/vibrant']"
+           [routerLinkActiveOptions]="{exact:true}" class="nav-link">Vibrant</a>
+      </div>
+
+      <a [routerLinkActive]="['is-active']" [routerLink]="['/preloaders']" [routerLinkActiveOptions]="{exact:true}"
+         class="nav-link">Preloaders</a>
+      <a [routerLinkActive]="['is-active']" [routerLink]="['/component-library']"
+         [routerLinkActiveOptions]="{exact:true}" class="nav-link">Component Library</a>
+      <a [routerLinkActive]="['is-active']" [routerLink]="['/typography']" [routerLinkActiveOptions]="{exact:true}"
+         class="nav-link">Typography</a>
     </div>
-
-    <a [routerLinkActive]="['is-active']" [routerLink]="['/preloaders']" [routerLinkActiveOptions]="{exact:true}">Preloaders</a>
-
+    <div>
+      <p>Check out my </p><a href="portfolio.rachellepatman.com" target="_blank">portfolio</a>
+      <p>to see more of my work</p>
+    </div>
   </div>
 </div>
 

@@ -1,1 +1,15 @@
-<h1>Subtle Gradients</h1>
+<h2>Subtle Gradients</h2>
+<div class="grid">
+  <div *ngFor="let gradient of subtleGradients" class="card card--4-col">
+    <div class="gradient {{gradient.gradientCssName}}">
+    </div>
+    <div class="card-title">
+      <h4>{{gradient.name}}</h4>
+      <div class="values-wrapper">
+        <h5 [style.color]="'#' + gradient.gradientStartValue">#{{gradient.gradientStartValue}}</h5>
+        <h5 style="padding: 0 10px;"> - </h5>
+        <h5 [style.color]="'#' + gradient.gradientEndValue">#{{gradient.gradientEndValue}}</h5>
+      </div>
+    </div>
+  </div>
+</div>

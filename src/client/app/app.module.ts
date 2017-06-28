@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { APP_BASE_HREF } from '@angular/common';
+import { APP_BASE_HREF, CommonModule } from '@angular/common';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -10,6 +10,7 @@ import { GalleryConfig, GalleryModule } from 'ng-gallery';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Ng2ScrollimateModule } from 'ng2-scrollimate';
 import { ComponentsModule } from './components/components.module';
+import { MdTabsModule, MdSidenavModule, MdIconModule, MdButtonModule } from '@angular/material';
 
 export const galleryConfig: GalleryConfig = {
   'style': {
@@ -37,10 +38,15 @@ export const galleryConfig: GalleryConfig = {
 @NgModule({
   imports: [ BrowserModule,
     HttpModule,
+    CommonModule,
     AppRoutingModule,
     ComponentsModule,
     HomeModule,
     BrowserAnimationsModule,
+    MdTabsModule,
+    MdSidenavModule,
+    MdIconModule,
+    MdButtonModule,
     Ng2ScrollimateModule,
     GalleryModule.forRoot(galleryConfig),
     SharedModule.forRoot()],

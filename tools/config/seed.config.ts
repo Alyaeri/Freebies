@@ -144,7 +144,7 @@ export class SeedConfig {
    * `index.html`.
    * @type {string}
    */
-  APP_TITLE = 'Portfolio | Rachelle Patman';
+  APP_TITLE = 'Freebies | Rachelle Patman';
 
   /**
    * Tracking ID.
@@ -394,6 +394,7 @@ export class SeedConfig {
       '@angular/platform-browser-dynamic': 'node_modules/@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js',
       '@angular/router': 'node_modules/@angular/router/bundles/router.umd.js',
       '@angular/animations/browser': 'node_modules/@angular/animations/bundles/animations-browser.umd.js',
+      '@angular/material': 'node_modules/@angular/material/bundles/material.umd.js',
 
       '@angular/common/testing': 'node_modules/@angular/common/bundles/common-testing.umd.js',
       '@angular/compiler/testing': 'node_modules/@angular/compiler/bundles/compiler-testing.umd.js',
@@ -463,6 +464,9 @@ export class SeedConfig {
       },
       '@angular/animations': {
         main: 'bundles/animations.umd.js',
+        defaultExtension: 'js'
+      }, '@angular/material': {
+        main: 'bundles/material.umd.js',
         defaultExtension: 'js'
       },
       '@angular/common': {

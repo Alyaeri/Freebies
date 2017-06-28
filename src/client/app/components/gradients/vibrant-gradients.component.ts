@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Gradient } from './gradients';
 
 /**
  * This class represents the lazy loaded AboutComponent.
@@ -11,6 +12,18 @@ import { Component } from '@angular/core';
   host: {  'class': 'router-outlet' }
 })
 export class VibrantGradientsComponent {
+
+  vibrantGradients = [
+    new Gradient('Vibrant1', 'vibrant1', 'f7c256', 'ff5e00'),
+    new Gradient('Vibrant2', 'vibrant2', 'ff6a00', 'ee0979'),
+    new Gradient('Vibrant3', 'vibrant3', 'e26bd4', '9f3bea'),
+    new Gradient('Vibrant4', 'vibrant4', '973cfd', 'f5df44'),
+    new Gradient('Vibrant5', 'vibrant5', '00ffad', '5fcdf7'),
+    new Gradient('Vibrant6', 'vibrant6', '913eef', '2f9dfb'),
+    new Gradient('Vibrant7', 'vibrant7', 'e41ee6', '07dbf1'),
+    new Gradient('Vibrant8', 'vibrant8', '1bfbfb', '0a86f1'),
+  ];
+
 
   scrollimateOptions: any = {
     section1: {

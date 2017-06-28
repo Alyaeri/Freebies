@@ -1,2 +1,420 @@
-<h1>Preloaders</h1>
+<md-sidenav-container>
 
+  <!-- SIDENAV -->
+  <md-sidenav mode="over" align="end" #sidenav class="example-sidenav">
+    <md-tab-group>
+      <md-tab label="HTML">
+        <section *ngIf="preloaderCard1" [innerHTML]="preloader1html" highlight-js-content=".highlight"></section>
+        <section *ngIf="preloaderCard2" [innerHTML]="preloader2html" highlight-js-content=".highlight"></section>
+        <section *ngIf="preloaderCard3" [innerHTML]="preloader3html" highlight-js-content=".highlight"></section>
+        <section *ngIf="preloaderCard4" [innerHTML]="preloader4html" highlight-js-content=".highlight"></section>
+        <section *ngIf="preloaderCard5" [innerHTML]="preloader5html" highlight-js-content=".highlight"></section>
+        <section *ngIf="preloaderCard6" [innerHTML]="preloader6html" highlight-js-content=".highlight"></section>
+        <section *ngIf="preloaderCard7" [innerHTML]="preloader7html" highlight-js-content=".highlight"></section>
+        <section *ngIf="preloaderCard8" [innerHTML]="preloader8html" highlight-js-content=".highlight"></section>
+        <section *ngIf="preloaderCard9" [innerHTML]="preloader9html" highlight-js-content=".highlight"></section>
+        <section *ngIf="preloaderCard10" [innerHTML]="preloader10html" highlight-js-content=".highlight"></section>
+        <section *ngIf="preloaderCard11" [innerHTML]="preloader11html" highlight-js-content=".highlight"></section>
+        <section *ngIf="preloaderCard12" [innerHTML]="preloader12html" highlight-js-content=".highlight"></section>
+        <section *ngIf="preloaderCard13" [innerHTML]="preloader13html" highlight-js-content=".highlight"></section>
+        <section *ngIf="preloaderCard14" [innerHTML]="preloader14html" highlight-js-content=".highlight"></section>
+        <section *ngIf="preloaderCard15" [innerHTML]="preloader15html" highlight-js-content=".highlight"></section>
+        <section *ngIf="preloaderCard16" [innerHTML]="preloader16html" highlight-js-content=".highlight"></section>
+        <section *ngIf="preloaderCard17" [innerHTML]="preloader17html" highlight-js-content=".highlight"></section>
+        <section *ngIf="preloaderCard18" [innerHTML]="preloader18html" highlight-js-content=".highlight"></section>
+        <section *ngIf="preloaderCard19" [innerHTML]="preloader19html" highlight-js-content=".highlight"></section>
+        <section *ngIf="preloaderCard20" [innerHTML]="preloader20html" highlight-js-content=".highlight"></section>
+        <section *ngIf="preloaderCard21" [innerHTML]="preloader21html" highlight-js-content=".highlight"></section>
+        <section *ngIf="preloaderCard22" [innerHTML]="preloader22html" highlight-js-content=".highlight"></section>
+        <section *ngIf="preloaderCard23" [innerHTML]="preloader23html" highlight-js-content=".highlight"></section>
+        <section *ngIf="preloaderCard24" [innerHTML]="preloader24html" highlight-js-content=".highlight"></section>
+      </md-tab>
+      <md-tab label="SCSS">
+        <section *ngIf="preloaderCard1" [innerHTML]="preloader1scss" highlight-js-content=".highlight"></section>
+        <section *ngIf="preloaderCard2" [innerHTML]="preloader2scss" highlight-js-content=".highlight"></section>
+        <section *ngIf="preloaderCard3" [innerHTML]="preloader3scss" highlight-js-content=".highlight"></section>
+        <section *ngIf="preloaderCard4" [innerHTML]="preloader4scss" highlight-js-content=".highlight"></section>
+        <section *ngIf="preloaderCard5" [innerHTML]="preloader5scss" highlight-js-content=".highlight"></section>
+        <section *ngIf="preloaderCard6" [innerHTML]="preloader6scss" highlight-js-content=".highlight"></section>
+        <section *ngIf="preloaderCard7" [innerHTML]="preloader7scss" highlight-js-content=".highlight"></section>
+        <section *ngIf="preloaderCard8" [innerHTML]="preloader8scss" highlight-js-content=".highlight"></section>
+        <section *ngIf="preloaderCard9" [innerHTML]="preloader9scss" highlight-js-content=".highlight"></section>
+        <section *ngIf="preloaderCard10" [innerHTML]="preloader10scss" highlight-js-content=".highlight"></section>
+        <section *ngIf="preloaderCard11" [innerHTML]="preloader11scss" highlight-js-content=".highlight"></section>
+        <section *ngIf="preloaderCard12" [innerHTML]="preloader12scss" highlight-js-content=".highlight"></section>
+        <section *ngIf="preloaderCard13" [innerHTML]="preloader13scss" highlight-js-content=".highlight"></section>
+        <section *ngIf="preloaderCard14" [innerHTML]="preloader14scss" highlight-js-content=".highlight"></section>
+        <section *ngIf="preloaderCard15" [innerHTML]="preloader15scss" highlight-js-content=".highlight"></section>
+        <section *ngIf="preloaderCard16" [innerHTML]="preloader16scss" highlight-js-content=".highlight"></section>
+        <section *ngIf="preloaderCard17" [innerHTML]="preloader17scss" highlight-js-content=".highlight"></section>
+        <section *ngIf="preloaderCard18" [innerHTML]="preloader18scss" highlight-js-content=".highlight"></section>
+        <section *ngIf="preloaderCard19" [innerHTML]="preloader19scss" highlight-js-content=".highlight"></section>
+        <section *ngIf="preloaderCard20" [innerHTML]="preloader20scss" highlight-js-content=".highlight"></section>
+        <section *ngIf="preloaderCard21" [innerHTML]="preloader21scss" highlight-js-content=".highlight"></section>
+        <section *ngIf="preloaderCard22" [innerHTML]="preloader22scss" highlight-js-content=".highlight"></section>
+        <section *ngIf="preloaderCard23" [innerHTML]="preloader23scss" highlight-js-content=".highlight"></section>
+        <section *ngIf="preloaderCard24" [innerHTML]="preloader24scss" highlight-js-content=".highlight"></section>
+      </md-tab>
+    </md-tab-group>
+  </md-sidenav>
+
+  <h2>Preloaders</h2>
+
+  <div class="grid">
+
+    <!-- LINE SCALE -->
+    <div class="card card--4-col">
+      <div class="preloader">
+        <div class="loader-inner line-scale">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+      <div class="card-title">
+        <h4>Line Scale</h4>
+        <button (click)="togglePreloaderCard1(); sidenav.open()" md-icon-button>
+          <md-icon>code</md-icon>
+        </button>
+      </div>
+    </div>
+
+    <!-- LINE PULSE -->
+    <div class="card card--4-col">
+      <div class="preloader">
+        <div class="loader-inner line-pulse">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+      <div class="card-title">
+        <h4>Line Pulse</h4>
+        <button (click)="togglePreloaderCard2(); sidenav.open();" md-icon-button>
+          <md-icon>code</md-icon>
+        </button>
+      </div>
+    </div>
+
+    <!-- EQUALIZER VERTICAL -->
+    <div class="card card--4-col">
+      <div class="preloader">
+        <div class="loader-inner equalizer-vertical">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+      <div class="card-title">
+        <h4>Equalizer Vertical</h4>
+        <button (click)="togglePreloaderCard3(); sidenav.open()" md-icon-button>
+          <md-icon>code</md-icon>
+        </button>
+      </div>
+    </div>
+
+    <!-- EQUALIZER WAVE -->
+    <div class="card card--4-col">
+      <div class="preloader">
+        <div class="loader-inner equalizer-wave">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+      <div class="card-title">
+        <h4>Equalizer Wave</h4>
+        <button (click)="togglePreloaderCard4(); sidenav.open()" md-icon-button>
+          <md-icon>code</md-icon>
+        </button>
+      </div>
+    </div>
+
+    <!-- BALL PULSE -->
+    <div class="card card--4-col">
+      <div class="preloader">
+        <div class="loader-inner ball-pulse">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+      <div class="card-title">
+        <h4>Ball Pulse</h4>
+        <button (click)="togglePreloaderCard5(); sidenav.open()" md-icon-button>
+          <md-icon>code</md-icon>
+        </button>
+      </div>
+    </div>
+
+    <!-- BALL HOP -->
+    <div class="card card--4-col">
+      <div class="preloader">
+        <div class="loader-inner ball-hop">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+      <div class="card-title">
+        <h4>Ball Hop</h4>
+        <button (click)="togglePreloaderCard6(); sidenav.open()" md-icon-button>
+          <md-icon>code</md-icon>
+        </button>
+      </div>
+    </div>
+
+    <!-- BALL SPIN -->
+    <div class="card card--4-col">
+      <div class="preloader">
+        <div class="loader-inner ball-spin">
+          <div></div>
+        </div>
+      </div>
+
+      <div class="card-title">
+        <h4>Ball Spin</h4>
+        <button (click)="togglePreloaderCard7(); sidenav.open()" md-icon-button>
+          <md-icon>code</md-icon>
+        </button>
+      </div>
+    </div>
+
+    <!-- BALL SWAP -->
+    <div class="card card--4-col">
+      <div class="preloader">
+        <div class="loader-inner ball-swap">
+          <div></div>
+        </div>
+      </div>
+
+      <div class="card-title">
+        <h4>Ball Swap</h4>
+        <button (click)="togglePreloaderCard8(); sidenav.open()" md-icon-button>
+          <md-icon>code</md-icon>
+        </button>
+      </div>
+    </div>
+
+    <!-- CIRCLE RIPPLE SCALE -->
+    <div class="card card--4-col">
+      <div class="preloader">
+        <div class="loader-inner circle-ripple-scale">
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+      <div class="card-title">
+        <h4>Circle Ripple Scale</h4>
+        <button (click)="togglePreloaderCard9(); sidenav.open()" md-icon-button>
+          <md-icon>code</md-icon>
+        </button>
+      </div>
+    </div>
+
+    <!-- CIRCLE SCALE -->
+    <div class="card card--4-col">
+      <div class="preloader">
+        <div class="loader-inner circle-scale">
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+      <div class="card-title">
+        <h4>Circle Scale</h4>
+        <button (click)="togglePreloaderCard10(); sidenav.open()" md-icon-button>
+          <md-icon>code</md-icon>
+        </button>
+      </div>
+    </div>
+
+    <!-- CIRCLE SCALE UNEVEN -->
+    <div class="card card--4-col">
+
+      <div class="preloader">
+        <div class="loader-inner circle-scale-uneven">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+      <div class="card-title">
+        <h4>Circle Scale Uneven</h4>
+        <button (click)="togglePreloaderCard11(); sidenav.open()" md-icon-button>
+          <md-icon>code</md-icon>
+        </button>
+      </div>
+    </div>
+
+    <!-- CIRCLE SCALE MULTIPLE -->
+    <div class="card card--4-col">
+      <div class="preloader">
+        <div class="loader-inner circle-scale-multiple">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+      <div class="card-title">
+        <h4>Circle Scale Multiple</h4>
+        <button (click)="togglePreloaderCard12(); sidenav.open()" md-icon-button>
+          <md-icon>code</md-icon>
+        </button>
+      </div>
+    </div>
+
+    <!-- CIRCLE ROTATE -->
+    <div class="card card--4-col">
+      <div class="preloader">
+        <div class="loader-inner circle-rotate">
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+      <div class="card-title">
+        <h4>Circle Rotate</h4>
+        <button (click)="togglePreloaderCard13(); sidenav.open()" md-icon-button>
+          <md-icon>code</md-icon>
+        </button>
+      </div>
+    </div>
+
+    <!-- CIRCLE SPINNER -->
+    <div class="card card--4-col">
+      <div class="preloader">
+        <div class="loader-inner circle-spinner">
+          <div></div>
+        </div>
+      </div>
+
+      <div class="card-title">
+        <h4>Circle Spinner</h4>
+        <button (click)="togglePreloaderCard14(); sidenav.open()" md-icon-button>
+          <md-icon>code</md-icon>
+        </button>
+      </div>
+    </div>
+
+    <!-- CIRCLE EVEN SWIRL -->
+    <div class="card card--4-col">
+      <div class="preloader">
+        <div class="loader-inner circle-even-swivel">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+      <div class="card-title">
+        <h4>Circle Even Swivel</h4>
+        <button (click)="togglePreloaderCard15(); sidenav.open()" md-icon-button>
+          <md-icon>code</md-icon>
+        </button>
+      </div>
+    </div>
+
+    <!-- CIRCLE SWIVEL -->
+    <div class="card card--4-col">
+      <div class="preloader">
+        <div class="loader-inner circle-swivel">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+      <div class="card-title">
+        <h4>Circle Swivel</h4>
+        <button (click)="togglePreloaderCard16(); sidenav.open()" md-icon-button>
+          <md-icon>code</md-icon>
+        </button>
+      </div>
+    </div>
+
+    <!-- CIRCLE OUTLINE -->
+    <div class="card card--4-col">
+      <div class="preloader">
+        <div class="loader-inner circle-outline">
+          <div></div>
+        </div>
+      </div>
+
+      <div class="card-title">
+        <h4>Circle Outline</h4>
+        <button (click)="togglePreloaderCard17(); sidenav.open()" md-icon-button>
+          <md-icon>code</md-icon>
+        </button>
+      </div>
+    </div>
+
+    <!-- CIRCLE DOT ROTATE -->
+    <div class="card card--4-col">
+      <div class="preloader">
+        <div class="loader-inner circle-dot-rotate">
+          <div>
+            <div class="circle-dot"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-title">
+        <h4>Circle Dot Rotate</h4>
+        <button (click)="togglePreloaderCard18(); sidenav.open()" md-icon-button>
+          <md-icon>code</md-icon>
+        </button>
+      </div>
+    </div>
+
+    <!-- CIRCLE INNER DOT ROTATE -->
+    <div class="card card--4-col">
+
+      <div class="preloader">
+        <div class="loader-inner circle-inner-dot-rotate">
+          <div>
+            <div class="circle-inner-dot"></div>
+          </div>
+        </div>
+      </div>
+      <div class="card-title">
+        <h4>Circle Inner Dot</h4>
+        <button (click)="togglePreloaderCard19(); sidenav.open()" md-icon-button>
+          <md-icon>code</md-icon>
+        </button>
+      </div>
+    </div>
+
+    <!-- CIRCLE FULL DOT ROTATE -->
+    <div class="card card--4-col">
+      <div class="preloader">
+        <div class="loader-inner circle-full-dot-rotate">
+          <div>
+            <div class="circle-full-dot"></div>
+          </div>
+        </div>
+      </div>
+      <div class="card-title">
+        <h4>Circle Full Dot</h4>
+        <button (click)="togglePreloaderCard20(); sidenav.open()" md-icon-button>
+          <md-icon>code</md-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+
+</md-sidenav-container>
