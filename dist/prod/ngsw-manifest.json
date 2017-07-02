@@ -1,7 +1,7 @@
 {
   "static": {
     "urls": {
-      "/index.html": "0aa862b6ec87c718e8af213d211e125e46e04c72",
+      "/index.html": "7e7e472ca6ff33627b2627e4a03e32683c8cc58b",
       "/worker-basic.min.js": "93904d94c0bef0479f1ec0b182788f4301d9f28e",
       "/css\\main.css": "44c8aa23688a2432f1d7ba7994ed4c9a71ba569b",
       "/favicon\\android-icon-144x144.png": "6604fde0ae7929bcbadda003750b1ac0d212af3c",
@@ -31,25 +31,10 @@
       "/favicon\\ms-icon-150x150.png": "a357b94f65ae0659a2f98289f394013fbf22c149",
       "/favicon\\ms-icon-310x310.png": "43599a343f7bc77cbb1f70e9a8001b449db775f1",
       "/favicon\\ms-icon-70x70.png": "64310499b74454434281b032044886035a2a9e05",
-      "/fonts\\font-awesome.ttf": "13b1eab65a983c7a73bc7997c479d66943f7c6cb",
       "/fonts\\MaterialIcons-Regular.ttf": "fc05de31234e0090f7ddc28ce1b23af4026cb1da",
       "/fonts\\Questrial-Regular.ttf": "eb89eede36801a0b3c50f03e4320797c18dddee1",
-      "/fonts\\Roboto-Black.ttf": "771b45f0ceb2a752cd0d705187468e6993fd0fb9",
-      "/fonts\\Roboto-BlackItalic.ttf": "dfcf1003251caffcc9b94057d9845a5626b02fa3",
-      "/fonts\\Roboto-Bold.ttf": "0a1793926e2ee724cf2ff3fc7adc745348659f82",
-      "/fonts\\Roboto-Italic.ttf": "7703c7ab71c35f62289734f6b5431589008e700c",
-      "/fonts\\Roboto-BoldItalic.ttf": "23d74d6edc2cc6f0ae9e07e0094ebd3969e25b27",
-      "/fonts\\Roboto-Light.ttf": "2e3148d213b15328ebebba14e828fb3bf79634ee",
-      "/fonts\\Roboto-LightItalic.ttf": "947d4adbf4d1643a979972c83842899e752ee826",
-      "/fonts\\Roboto-Medium.ttf": "08bab5b1ab478e8af2279b613d3a32636b85cc65",
-      "/fonts\\Roboto-MediumItalic.ttf": "85304ad8ca294b9cefc65874d48a70a271635d28",
-      "/fonts\\Roboto-Regular.ttf": "cb0cb91a31f43293bd7042ddab945ce161c29d3d",
-      "/fonts\\Roboto-Thin.ttf": "0fd03ae48dc48825c79b346fd981f55a01acf9e1",
-      "/fonts\\Roboto-ThinItalic.ttf": "b61b6329c1b273fd662e638fb9cff02811d6d769",
-      "/images\\hero.png": "3fb1e882edd9f2a4fa4821d01dc8434e2b66493e",
-      "/images\\logo-half.png": "e2617d19fd070769b63d82d409f0b853073196c1",
       "/images\\logo.png": "e57f28942612387c2184fadd654d6a4394d9ba08",
-      "/js\\app.js": "a6b329b3cccd4ffb7bd09f151edf602cd5381e1c",
+      "/js\\app.js": "18f2f99ded3e373b52e9aa2ea630b1726d27b6d9",
       "/js\\shims.js": "9ae3e76160afafb39417907a7fa5ea9eb18be514"
     }
   },

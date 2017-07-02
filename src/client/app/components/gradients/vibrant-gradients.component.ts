@@ -14,14 +14,14 @@ import { Gradient } from './gradients';
 export class VibrantGradientsComponent {
 
   vibrantGradients = [
-    new Gradient('Vibrant1', 'vibrant1', 'f7c256', 'ff5e00'),
-    new Gradient('Vibrant2', 'vibrant2', 'ff6a00', 'ee0979'),
-    new Gradient('Vibrant3', 'vibrant3', 'e26bd4', '9f3bea'),
-    new Gradient('Vibrant4', 'vibrant4', '973cfd', 'f5df44'),
-    new Gradient('Vibrant5', 'vibrant5', '00ffad', '5fcdf7'),
-    new Gradient('Vibrant6', 'vibrant6', '913eef', '2f9dfb'),
-    new Gradient('Vibrant7', 'vibrant7', 'e41ee6', '07dbf1'),
-    new Gradient('Vibrant8', 'vibrant8', '1bfbfb', '0a86f1'),
+    new Gradient('Sunrise', 'vibrant1', 'f7c256', 'ff5e00'),
+    new Gradient('Sunset', 'vibrant2', 'ff6a00', 'ee0979'),
+    new Gradient('Candy Floss', 'vibrant3', 'e26bd4', '9f3bea'),
+    new Gradient('Starfall', 'vibrant4', '973cfd', 'f5df44'),
+    new Gradient('Pacific', 'vibrant5', '00ffad', '5fcdf7'),
+    new Gradient('Electric', 'vibrant6', '913eef', '2f9dfb'),
+    new Gradient('Vice', 'vibrant7', 'e41ee6', '07dbf1'),
+    new Gradient('Aqua Marine', 'vibrant8', '1bfbfb', '0a86f1'),
   ];
 
 
